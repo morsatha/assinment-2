@@ -211,9 +211,7 @@ footer{
         align-items: center;
         margin-left: 0px;
     }
-    .photo{
-        
-    }
+    
     .banner-left{
         order: 2;
         padding: 50px 0;
@@ -230,5 +228,40 @@ footer{
     .ankur-tag{
         display: none;
     }
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        
+        gap:30px;
+    }
+    .contact{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .contact-right{
+        order: 2;
+        width:100%;
+    }
+    /* .title{
+        margin-bottom:-50px;
+        height:10px;
+    } */
     
+}
+
+@media only screen and (min-width: 688px) and (max-width:992px){
+    .photo{
+       display: grid;
+       grid-template-columns: repeat(2, 1fr);
+       grid-row-gap:70px;
+    }
+    .contact{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .contact-right{
+        order: 2;
+        width:100%;
+    }
+
 }
